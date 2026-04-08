@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Multipurpose Bootstrap 5 Template</title>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+<style>
+ .product-card {
+      border: none;
+      background: white;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .product-img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-info">
+    <div class="container">
+      <a class="navbar-brand" href="logo/logo 2.jpg">
+        <img src="logo/logo 2.jpg" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-primary">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Portfolio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="My work.html">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+<!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner/website-Banner1.jpg" class="d-block w-100"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/My banner.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/wed development.jpg" class="d-block w-100" alt="...">
+    </div>
+ 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<section id="products" class="py-5">
+    <div class="container">
+      <h2 class="section-title">✨My Project work</h2>
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card product-card">
+            <img src="My project work/wedding.jpg" class="product-img" alt="wedding">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">wedding</h6>
+              <p class="text-muted">R1000</p>
+              <button class="btn btn-buy text-white btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card product-card">
+            <img src="My project work/acen skin.jpg" class="product-img" alt="acne skin">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">removing unwanted images</h6>
+              <p class="text-muted">R500</p>
+              <button class="btn btn-buy text-white btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card product-card">
+            <img src="My project work/THE boy .jpg" class="product-img" alt="the boy">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Creating for you a design images</h6>
+              <p class="text-muted">$1299</p>
+              <button class="btn btn-buy text-white btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card product-card">
+            <img src="My project work/Removing elements.jpg" class="product-img" alt="Removing elements">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Removing elements</h6>
+              <p class="text-muted">R1000</p>
+              <button class="btn btn-buy text-white btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>

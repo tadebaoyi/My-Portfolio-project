@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/main.css">
+
+  <style>
+    .product-card {
+      border: none;
+      background: white;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .product-img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .portfolio-highlights {
+    list-style-type: none; /* remove default bullets */
+    padding: 0;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .portfolio-highlights li {
+    position: relative;
+    padding-left: 1.5rem; /* space for custom bullet */
+    margin-bottom: 1rem;  /* space between items */
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  /* Add a custom bullet */
+  .portfolio-highlights li::before {
+    content: "•";  /* bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #ff6600; /* accent color */
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-light navbar-info">
+    <div class="container">
+      <a class="navbar-brand" href="logo/logo 2.jpg">
+        <img src="logo/logo 2.jpg" height="50" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-primary">
+          <li class="nav-item"><a class="nav-link active" href="Portfolio.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="My work.html">My Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="About us.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex ms-3">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="container my-5 text-center">
+    <h1>Welcome to My Work</h1>
+    <p>Explore here</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="container my-5">
+    <div class="row">
+      <!-- Example Project Card -->
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="My work/photoshop.jpg" class="card-img-top product-img" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">Photoshop</h5>
+            <ul>
+            <ul class="portfolio-highlights">
+            <li>Digital Art & Photo Manipulation Portfolio</li>
+            <li>Creative Photoshop Projects by [Your Name]</li>
+            <li>Transforming Ideas into Visuals with Photoshop</li>
+</ul>
+           </p>
+            <a href="Photoshop.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="My work/visual studio code.jpg" class="card-img-top product-img" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">My code Project</h5>
+            <ul>
+            <ul class="portfolio-highlights">
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Website Designed and Coded in VS Code</li>
+            <li>User-friendly interface”</li>
+            </ul>
+            <a href="Visual code.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="My work/visual studio.webp" class="card-img-top product-img" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title">My website Project</h5>
+            <ul>
+            <ul class="portfolio-highlights">
+            <li>C# / ASP.NET / .NET Framework / .NET Core / WPF / WinForms / SQL Server</li>
+            <li></li>
+            <li></li>
+            </ul>
+            <a href="Visual studio.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more project cards similarly -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>

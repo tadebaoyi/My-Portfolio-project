@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .project-card img {
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .project-card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo/logo 2.jpg" height="50" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="Portfolio.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="My work.html">My Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="About us.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+      <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="container my-5 text-center">
+  <h1>Welcome to My Work</h1>
+  <p>Explore here</p>
+</header>
+
+<!-- Portfolio Cards -->
+<div class="container">
+  <div class="row g-4 justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#modal1">
+        <img src="Photoshop/My sun eco/home markup.png" class="card-img-top" alt="Project 1">
+        <div class="card-body text-center">
+          <h5 class="card-title">My Sun Eco</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#modal2">
+        <img src="Photoshop/creating.jpg" class="card-img-top" alt="Project 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Gallery Project</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Sun Eco Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body d-flex flex-wrap gap-2 justify-content-center">
+        <a href="Photoshop/My sun eco/home markup.png">
+        <img src="Photoshop/My sun eco/home markup.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/My sun eco/Pricing.png">
+        <img src="Photoshop/My sun eco/Pricing.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/My sun eco/About us new.png">
+        <img src="Photoshop/My sun eco/About us new.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/My sun eco/Gallery.png">
+        <img src="Photoshop/My sun eco/Gallery.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/My sun eco/Contact US.png">
+        <img src="Photoshop/My sun eco/Contact US.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Gallery Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body d-flex flex-wrap gap-2 justify-content-center">
+        <a href="Photoshop/Gallery/Acne skin remove.png">
+        <img src="Photoshop/Gallery/Acne skin.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/Aqua.png">
+        <img src="Photoshop/Gallery/Aqua.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/Boy.png">
+        <img src="Photoshop/Gallery/Boy.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/Duggan_PuddleWalk remove.png">
+        <img src="Photoshop/Gallery/Duggan_PuddleWalk.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/heaven nightshelther fund raiser.png">
+        <img src="Photoshop/Gallery/heaven nightshelther fund raiser.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/island.png">
+        <img src="Photoshop/Gallery/island.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/MY PHOTOSHOP.png">
+        <img src="Photoshop/Gallery/MY PHOTOSHOP.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/Vector drawing.png">
+        <img src="Photoshop/Gallery/Vector drawing.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <a href="Photoshop/Gallery/wedding-photo-2.png">
+        <img src="Photoshop/Gallery/wedding-photo-1.png" class="img-fluid" style="max-width: 200px;">
+        </a>
+        <!-- add the rest of your gallery images here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
